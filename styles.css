@@ -3,7 +3,12 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+li {
+  list-style-type: none;
+}
+li::before {
+  content: "\1F31F";
+}
 body {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.5;
@@ -191,7 +196,6 @@ body {
 }
 
 .experiences__company-project {
-  margin-left: 15px;
   margin-bottom: 25px;
 }
 
@@ -219,11 +223,15 @@ body {
 
 .additional-info__education {
   margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .additional-info__education-header {
   color: var(--secondary-text-color);
   text-align: left;
+  margin-bottom: 20px;
+}
+.additional-info__education-university {
   margin-bottom: 20px;
 }
 
